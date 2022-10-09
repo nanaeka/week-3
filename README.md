@@ -165,9 +165,14 @@ Akses index multidimensional array
  
  
 
+Membuat sebuah object
+   let person = {}; // person is an empty object
+ 
+ 
+ 
+ 
+ Mengakses Object dan Property Object
 
- 
- 
 
 
 
