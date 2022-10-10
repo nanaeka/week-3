@@ -155,7 +155,7 @@ Akses index multidimensional array
  
  
  
- # JavaScript Object
+ #  Object
  
  object adalah sebuah tipe data pada variabel yang menyimpan properti dan fungsi (method)
 
@@ -166,12 +166,96 @@ Akses index multidimensional array
  
 
 Membuat sebuah object
-   let person = {}; // person is an empty object
+
+     let person = {}; // person is an empty object
  
  
  
- 
- Mengakses Object dan Property Object
+ **Object** adalah tipe data non-primitid yang digunakan untuk menyimpan sebuah property dan method.
+  - struktur object dibuat dengan menggunakan curly bracket "{}".
+
+### Property Object
+
+- **Property** adalah data lengkap dari sebuah object yang menyimpan sebuah data.
+  - property dibuat dengan menggunakan key dan value
+  - key adalah nama dari property
+  - value adalah isi atau nilai dari property.
+
+### Method Object
+
+- **Method** adalah action dari sebuah object, method menyimpan sebuah function didalam object
+  - property dibuat dengan menggunakan key dan value
+  - key adalah nama dari method / nama function
+  - value adalah function itu sendiri
+- contoh kode object
+
+  ```
+      let state = {
+        nama: "rio aldi erwanto",
+        umur: "21",
+        salam: () =>{
+          console.log("halo, perkenalkan saya rio")
+        }
+      }
+  ```
+
+### Manipulasi Object
+
+- **Mengakses Object**
+  untuk mengakses property atau method kita dapat menggunakan namaObject.property
+
+  ```
+    console.log(state.nama)
+    console.log(state.salam)
+  ```
+
+- **Menambahkan Properti baru**
+  untuk menambahkan property baru kita dapat menggunakan assigment "=" dan spread operator "{...}
+
+  ```
+    state = {...state, nim: '2013020017'}
+  ```
+
+- **Mengupdate sebuah Object**
+  untuk menguptade kita perlu memanggil properti terlebih dahulu lalu kita gunakan assignment "=" dan value baru.
+
+  ```
+    state.umur = 22;
+  ```
+
+- **menghapus sebuah Object**
+  untuk menghapus object kita dapat menggunakan delete operator.
+  ```
+    delete state.nim;
+  ```
+
+### Nested Object
+
+- **Nested Object** adalah sebuah object yang berada didalam object
+  ```
+        let state = {
+          nama: "rio aldi erwanto",
+          umur: "21",
+          keluarga:{
+            adik: "rahma"
+          }
+        }
+  ```
+
+### Looping Object
+
+- **Lopping Object** untuk melakukan sebuah perulangan pada object kita dapat menggunakan method bawaan js yaitu "for in"
+  ```
+    for(let key in object){
+      //console.log(key)
+    }
+  ```
+
+### Array Of Object
+
+- sebuah array yang menyimpan object didalamnya, konsep aof ini sangat berkaitan erat dengan JSON dan akan kiat jumpai nanti saat bermain dengan API.
+
+## Rekursive Function
 
 
 
