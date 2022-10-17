@@ -2,11 +2,11 @@
 
 
 
-## JS Asynchronous JS Asynchronous (Fetch & Async/Await)
+## **JS Asynchronous JS Asynchronous (Fetch & Async/Await)**
 
 
  
-**Async Await**
+## **Async Await**
 
 <div align="justify">untuk menangani hasil dari sebuah Promise. dan await berfungsi untuk menunda sebuah kode dijalankan sampai proses asynchronous berhasil. strukurnya :
 
