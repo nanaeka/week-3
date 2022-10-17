@@ -1,1 +1,32 @@
-Writing Week 4
+# Writing Week 4
+
+
+
+## JS Asynchronous JS Asynchronous (Fetch & Async/Await)
+
+
+ 
+**Async Await**
+
+<div align="justify">untuk menangani hasil dari sebuah Promise. dan await berfungsi untuk menunda sebuah kode dijalankan sampai proses asynchronous berhasil. strukurnya :
+
+
+            // Bentuk pertama
+            const greeting = async () => {
+                let result = await promise()
+                return result
+            }
+            // bentuk kedua
+            async function greeting() {
+                let result = await promise()
+                return result
+            }
+            // bentuk ketiga (handle error)
+            async function greeting() {
+                try {
+                    let result = await promise()
+                    return result
+                } catch (error) {
+                    return error
+                }
+            }
